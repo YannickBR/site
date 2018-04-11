@@ -6,7 +6,7 @@ if (!pass1)
 history.go(-1);
 if (pass1.toLowerCase() == "voorbeeld") {
 alert('Wachtwoord correct! Druk op OK om door te gaan!');
-location.replace('Website-downloadwwtrue.html');
+location.replace('downloadwwtrue.html');
 break;
 } 
 testV+=1;
