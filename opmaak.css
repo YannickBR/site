@@ -20,6 +20,11 @@ li {
 .link {
   color: white;
 }
+.sticky {
+    position: fixed;
+  top: 0;
+  width: 100%
+}
 li a, .dropbtn {
     display: inline-block;
     color: grey;
@@ -37,9 +42,10 @@ html {
 }
 
 .bg { 
-  position: fixed;
+      position: fixed;
   top: 0;
   width: 100%
+
 }
 li a:hover, .dropdown:hover .dropbtn {
     color: #4d4d4d;
@@ -62,6 +68,7 @@ li a:hover, .dropdown:hover .dropbtn {
   padding: 20px;
   margin: -.5vw;
   border-top: solid white;
+  border-bottom: solid white;
 }
 /*actieve pagina een andere kleur geven*/
 .active {
@@ -75,9 +82,10 @@ li a:hover, .dropdown:hover .dropbtn {
   text-align: center;
   font-size: 30px; 
   font-family: Open sans;
-  color: black;
+  color: #fff;
+
 }
-/*Dropdown content text*/
+/*drop text*/
 .dropdown-content a {
     color: grey;
     padding: 12px 14px;
@@ -100,11 +108,11 @@ img {
 
 /*Begin op pagina*/
 h1 {
-  color: rgb(153, 153, 200); background-color: rgba(153, 153, 153, 80%); padding: 50px; border-style: solid; border-radius: 20px; font-family: Lato; font-size: 1.5vw; text-align: justify; color: white ; 
+  color: rgb(153, 153, 200); background-color: rgba(153, 153, 153, 80%); padding: 50px; border-style: solid; font-family: Open sans; font-size: 1.5vw; text-align: justify; color: white ; 
 }
 /*Alinea 1 grijs 18px*/
 h2 {
-    color: white; background-color: #4d4d4d; padding: 30px; border-style: solid; border-radius: 20px; font-family: monospace; font-size: 1.25vw; text-align: justify; color: wgite;
+    color: white; background-color: #4d4d4d; padding: 30px; border-style: solid; font-family: Open sans; font-size: 1.25vw; text-align: justify; color: wgite;
 }
 
 /*dingen voor lange teksten.*/
