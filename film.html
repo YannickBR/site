@@ -14,7 +14,7 @@ ul {
     font-size: 1.25vw;
     transition: 0.4s;
     letter-spacing: .5px
-
+    border-style: solid;
 }
 
 li {
@@ -39,12 +39,9 @@ body, html {
 }
 
 .bg { 
-    background-image: url("http://longwallpapers.com/Desktop-Wallpaper/mountain-wallpapers-for-android-For-Desktop-Wallpaper.jpg");
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+  position: fixed;
+    top: 0;
+  width: 100%
 }
 li a:hover, .dropdown:hover .dropbtn {
     color: #4d4d4d;
@@ -73,10 +70,9 @@ li a:hover, .dropdown:hover .dropbtn {
   top: 50%;
   width: 100%;
   text-align: center;
-  font-size: 30px;
-  background: rgba(77,77,77,70%);
+  font-size: 30px; 
   font-family: Lato;
-  color: #fff;
+  color: black;
 }
 /*Dropdown content text*/
 .dropdown-content a {
@@ -101,11 +97,11 @@ img {
 
 /*Begin op pagina*/
 h1 {
-  color: white; background-color: #333; padding: 50px; border-style: solid; border-radius: 20px; font-family: monospace; font-size: 1.5vw; text-align: justify;
+  color: rgb(153, 153, 200); background-color: rgba(153, 153, 153, 80%); padding: 50px; border-style: solid; border-radius: 20px; font-family: Lato; font-size: 1.5vw; text-align: justify; color: white ; 
 }
 /*Alinea 1 grijs 18px*/
 h2 {
-    color: white; background-color: #4d4d4d; padding: 30px; border-style: solid; border-radius: 20px; font-family: monospace; font-size: 1.25vw; text-align: justify;
+    color: white; background-color: #4d4d4d; padding: 30px; border-style: solid; border-radius: 20px; font-family: monospace; font-size: 1.25vw; text-align: justify; color: wgite;
 }
 
 /*dingen voor lange teksten.*/
@@ -113,15 +109,36 @@ h3 {
     color: white; background-color: #669999; padding: 30px; border-style: solid; border-radius: 20px; font-family: monospace; font-size: 1vw; text-align: justify;
 }
 </style>
+<script type="text/javascript">
+  window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
 </head>
 <!--Achtergrond website -->
-<body>
+<body style="background-image: url(https://i.pinimg.com/originals/5c/ee/06/5cee0663a665732a80a87b70e4098ee4.jpg);    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;">
 
 
 <!-- Menubalk -->
 <div class="bg">
 <ul>
-  <li><a href="home.html" class="active" class="text">>  Home</a></li>
+  <li><a href="home.html" class="active" class="text"><strong>>  Home</a></li>
   <li><a href="over.html" class="text"><strong>>  Over</a></li>
   <li><a href="downloads.html" class="">> Downloads</a></li>
   <li><a href="handigevideos.html">> Handige videos/links</a></li>
@@ -136,9 +153,13 @@ h3 {
           <a href="film.html">> Film</a>
   </li>
 <li>
-</div></li>
+</div>
+</li>
 </ul>
+</div>
 <p class="textbackground">"Everyone should code,<br>it teaches you<br>to think."<br><br>- Steve Jobs</p>
 </body> 
-</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1>Welkom op deze site! Deze site is het eindproject van IT van Yannick Bruintjes.</h1>
+
 </html>
