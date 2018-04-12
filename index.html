@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
-<title>Home</title>
+<title>CKV | Film</title>
 <link rel="icon" href="https://d26horl2n8pviu.cloudfront.net/link_data_pictures/images/000/097/991/shared_link/og-avatar-541739b5880b8586eeb033747a8a2cf3e689860d59b506d29a9633aed86d057d.png?1472667527">
 <style type="text/css"> 
 ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #006666;
-    font-family: monospace;
-    border-style: solid;
-    border-radius:  16px;
-    color: white;
+    color: grey;
+    margin:;
+    background-color: rgba(255,255,255,100%);
+    font-family: Open sans;
     font-size: 1.25vw;
+    transition: 0.4s;
+    letter-spacing: .5px
+    border-style: solid;
 }
 
 li {
     float: left;
+    transition: 0.4s;
 }
 
 .link {
@@ -25,41 +27,67 @@ li {
 }
 li a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: grey;
     text-align: center;
     padding: 14px 18px;
     text-decoration: none;
+    transition: 0.4s;
+        opacity: 70%;
+}
+body, html {
+    height: 100%;
 }
 
+.bg { 
+  position: fixed;
+    top: 0;
+  width: 100%
+}
 li a:hover, .dropdown:hover .dropbtn {
-    color: grey;
- transition: 0.2s
+    color: #4d4d4d;
+    transition: 0.4s;
 }
 
 /*text van dropdown*/
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #008080;
+    background-color: rgba(255,255,255,700%);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1
-    outline: white;
+    z-index: 1;
+    transition: 0.4s;
+    color: grey;
 }
-
+.bg2 {
+  background-color: #333;
+  padding: 20px;
+  margin: -.5vw;
+  border-top: solid white;
+}
 /*actieve pagina een andere kleur geven*/
 .active {
   color: #808080; 
 }
-
+.textbackground {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px; 
+  font-family: Open sans;
+  color: black;
+}
 /*Dropdown content text*/
 .dropdown-content a {
-    color: white;
+    color: grey;
     padding: 12px 14px;
     text-decoration: none;
     display: block;
     text-align: left;
     font-family: monospace;
+    transition: 0.4s;
 
 }
 img {
@@ -68,20 +96,17 @@ img {
 /*Opmaak van het Menu als je eroverheen gaat en van de dropdown van CKV*/
 .dropdown:hover .dropdown-content {
     display: block;
-    color: lightgrey;
-    border-right: solid;
-    border-left: solid;
-    border-bottom: solid;
-    border-radius: 16px;
+    color: rgba(255,255,255,70%);
+    transition: 0.4s;
 }
 
 /*Begin op pagina*/
 h1 {
-  color: white; background-color: #333; padding: 50px; border-style: solid; border-radius: 20px; font-family: monospace; font-size: 1.5vw; text-align: justify;
+  color: rgb(153, 153, 200); background-color: rgba(153, 153, 153, 80%); padding: 50px; border-style: solid; border-radius: 20px; font-family: Lato; font-size: 1.5vw; text-align: justify; color: white ; 
 }
 /*Alinea 1 grijs 18px*/
 h2 {
-    color: white; background-color: #4d4d4d; padding: 30px; border-style: solid; border-radius: 20px; font-family: monospace; font-size: 1.25vw; text-align: justify;
+    color: white; background-color: #4d4d4d; padding: 30px; border-style: solid; border-radius: 20px; font-family: monospace; font-size: 1.25vw; text-align: justify; color: wgite;
 }
 
 /*dingen voor lange teksten.*/
@@ -89,35 +114,58 @@ h3 {
     color: white; background-color: #669999; padding: 30px; border-style: solid; border-radius: 20px; font-family: monospace; font-size: 1vw; text-align: justify;
 }
 </style>
+<script type="text/javascript">
+  window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
 </head>
 <!--Achtergrond website -->
-<body style="background-image:url('http://getwallpapers.com/wallpaper/full/b/a/0/365455.jpg')">
+<body style="background-image: url(https://drhappy.de/sites/all/themes/drhappy/landingpage/assets/img/slider/slider-1.jpg);    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;">
 
 
 <!-- Menubalk -->
+<div class="bg">
 <ul>
-  <li><a href="home.html" class="active" class="text">> Home</a></li>
-  <li><a href="over.html" class="text">> Over mij</a></li>
+  <li><a href="home.html" class="active" class="text"><strong>>  Home</a></li>
+  <li><a href="over.html" class="text"><strong>>  Over</a></li>
   <li><a href="downloads.html" class="">> Downloads</a></li>
   <li><a href="handigevideos.html">> Handige videos/links</a></li>
   <li class="dropdown">
-    <a href="">> CKV </a>
+    <a href="">> Ckv </a>
        <div class="dropdown-content">
-          <a href="culturelebio.html">> Culturele Biografie</a>
-          <a href="Website-TKunst.html">> Toegepaste Kunst</a>
-          <a href="Website-BKunst.html">> Beeldende Kunst</a>
-          <a href="Website-Fotografie.html">> Fotografie</a>
-          <a href="Website-bouwkunst.html">> Bouwkunst</a>
+          <a href="culturelebiografie.html">> Culturele Biografie</a>
+          <a href="toegepaste_kunst.html">> Toegepaste Kunst</a>
+          <a href="beeldende_kunst.html">> Beeldende Kunst</a>
+          <a href="fotografie.html">> Fotografie</a>
+          <a href="bouwkunst.html">> Bouwkunst</a>
           <a href="film.html">> Film</a>
   </li>
 <li>
 </div>
-  <li style="padding-right: 30px; font-family: monospace  ; color: white; float: right"><a href="http://bonifatius.nl/" target="_blank">Bonifatius mavo</a>| Klas 4S </li>
 </li>
 </ul>
-</body>
-<h1><img src="http://code.emc.com/images/code_icon.png" align="right" width="150px" style="margin-left: 30px;">Welkom op deze site! Dit is een site voor de eindopdracht van IT (Informatie Technologie). Deze site is niet gemaakt in Wordpress of Wix maar echt die hard gecodeerd. Ik heb wel een hulpprogamma gebruikt om te coderen die alleen de kleuren van bepaalde dingen veranderd. Dit progamma heet Sublime Text. Wil je meer weten over hoe ik dit gedaan heb? Klik dan 
-  <a href="Website-handigevideos.html" class="link">hier</a>.</h1>
-
-<h2>Klik hieronder om het progamma Sublime Text te downloaden.<a href="https://download.sublimetext.com/Sublime%20Text%20Build%203143.dmg" target="_blank"><img src="https://pbs.twimg.com/profile_images/907960213814239232/w628Yrnl_400x400.jpg" style="display: block;" align="center"></a></h2>   
+</div>
+<p class="textbackground">"Everyone should code,<br>it teaches you<br>to think."<br><br>- Steve Jobs</p>
+</body> 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="bg2">
+<h1>Welkom op deze site! Deze site is het eindproject van IT van Yannick Bruintjes. Deze site is gemaakt door echt coderen en dus niet met wordpress of Wix.com! Dit is gedaan in het progamma Sublime Text. Wil je meer over dit progamma te weten komen? Druk dan <a href="https://www.sublimetext.com/" class="link" target="_blank">hier</a>.</h1>
+</div>
 </html>
