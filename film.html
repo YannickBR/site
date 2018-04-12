@@ -5,16 +5,16 @@
 <style type="text/css"> 
 ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #006666;
-    font-family: monospace;
-    border-style: solid;
-    border-radius:  16px;
-    color: white;
+    color: grey;
+    margin: -10px;
+    background-color: rgba(255,255,255,70%);
+    font-family: Lato;
     font-size: 1.25vw;
     transition: 0.4s;
+    letter-spacing: .5px
+
 }
 
 li {
@@ -27,15 +27,27 @@ li {
 }
 li a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: grey;
     text-align: center;
     padding: 14px 18px;
     text-decoration: none;
     transition: 0.4s;
+        opacity: 70%;
+}
+body, html {
+    height: 100%;
 }
 
+.bg { 
+    background-image: url("http://longwallpapers.com/Desktop-Wallpaper/mountain-wallpapers-for-android-For-Desktop-Wallpaper.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 li a:hover, .dropdown:hover .dropbtn {
-    color: grey;
+    color: #4d4d4d;
     transition: 0.4s;
 }
 
@@ -43,22 +55,32 @@ li a:hover, .dropdown:hover .dropbtn {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #008080;
+    background-color: rgba(255,255,255,70%);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1
-    outline: white;
+    z-index: 1;
     transition: 0.4s;
+    color: grey;
 }
 
 /*actieve pagina een andere kleur geven*/
 .active {
   color: #808080; 
 }
-
+.textbackground {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  background: rgba(77,77,77,70%);
+  font-family: Lato;
+  color: #fff;
+}
 /*Dropdown content text*/
 .dropdown-content a {
-    color: white;
+    color: grey;
     padding: 12px 14px;
     text-decoration: none;
     display: block;
@@ -73,11 +95,7 @@ img {
 /*Opmaak van het Menu als je eroverheen gaat en van de dropdown van CKV*/
 .dropdown:hover .dropdown-content {
     display: block;
-    color: lightgrey;
-    border-right: solid;
-    border-left: solid;
-    border-bottom: solid;
-    border-radius: 16px;
+    color: rgba(255,255,255,70%);
     transition: 0.4s;
 }
 
@@ -97,17 +115,18 @@ h3 {
 </style>
 </head>
 <!--Achtergrond website -->
-<body style="background-image:url('http://getwallpapers.com/wallpaper/full/b/a/0/365455.jpg')">
+<body>
 
 
 <!-- Menubalk -->
+<div class="bg">
 <ul>
-  <li><a href="home.html" class="active" class="text">> Home</a></li>
-  <li><a href="over.html" class="text">> Over mij</a></li>
+  <li><a href="home.html" class="active" class="text">>  Home</a></li>
+  <li><a href="over.html" class="text"><strong>>  Over</a></li>
   <li><a href="downloads.html" class="">> Downloads</a></li>
   <li><a href="handigevideos.html">> Handige videos/links</a></li>
   <li class="dropdown">
-    <a href="">> CKV </a>
+    <a href="">> Ckv </a>
        <div class="dropdown-content">
           <a href="culturelebiografie.html">> Culturele Biografie</a>
           <a href="toegepaste_kunst.html">> Toegepaste Kunst</a>
@@ -117,9 +136,9 @@ h3 {
           <a href="film.html">> Film</a>
   </li>
 <li>
-</div>
-  <li style="padding-right: 30px; font-family: monospace  ; color: white; float: right"><a href="http://bonifatius.nl/" target="_blank">Bonifatius mavo</a>| Klas 4S </li>
-</li>
+</div></li>
 </ul>
+<p class="textbackground">"Everyone should code,<br>it teaches you<br>to think."<br><br>- Steve Jobs</p>
 </body> 
+</div>
 </html>
