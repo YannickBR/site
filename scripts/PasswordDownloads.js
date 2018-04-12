@@ -6,7 +6,7 @@ if (!pass1)
 history.go(-1);
 if (pass1.toLowerCase() == "cdqopd") {
 alert('Wachtwoord correct! Druk op OK om door te gaan!');
-location.replace('downloadwwtrue.html');
+location.replace('downoadswwtrue.html');
 break;
 } 
 testV+=1;
