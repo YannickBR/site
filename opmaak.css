@@ -2,16 +2,15 @@ ul {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    color: grey;
+    color: #006666;
     margin: -6px;
     margin-left: -15px;
     background-color: white;
-    font-family: Open sans, Lato;
+    opacity:  30%;
+    font-family: monospace;
     font-size: 1.25vw;
     transition: 0.4s;
     letter-spacing: .5px;
-    border-style: solid;  
-    border-width: 5px;
 }
 li {
     float: left;
@@ -20,7 +19,11 @@ li {
 
 .link {
   color: white;
+
 }
+
+.logo {
+  }
 .sticky {
     position: fixed;
   top: 0;
@@ -37,7 +40,7 @@ li a, .dropbtn {
 }
 html {
     height: 100%;
-    background-image: url(https://drhappy.de/sites/all/themes/drhappy/landingpage/assets/img/slider/slider-1.jpg);
+    background-image: url(https://www.planwallpaper.com/static/images/4433836-space-wallpapers.jpg);
     background-repeat: repeat-y;
     background-size: cover;
 }
@@ -65,11 +68,9 @@ li a:hover, .dropdown:hover .dropbtn {
     color: grey;
 }
 .bg2 {
-  background-color: #333;
+  background-color: #333 40%;
   padding: 20px;
   margin: -.5vw;
-  border-top: solid white;
-  border-bottom: solid white;
 }
 /*actieve pagina een andere kleur geven*/
 .active {
@@ -82,7 +83,7 @@ li a:hover, .dropdown:hover .dropbtn {
   width: 100%;
   text-align: center;
   font-size: 30px; 
-  font-family: Open sans;
+  font-family: monospace  ;
   color: #fff;
 
 }
@@ -112,11 +113,11 @@ img {
 
 /*Begin op pagina*/
 h1 {
-  color: rgb(153, 153, 200); background-color: rgba(153, 153, 153, 80%); padding: 50px; border-style: solid; font-family: Open sans; font-size: 1.5vw; text-align: justify; color: white ; 
+  color: rgb(153, 153, 200); background-color: rgba(153, 153, 153, 80%); padding: 50px; border-style: solid; font-family: Arial; font-size: 1.5vw; text-align: justify; color: white ; 
 }
 /*Alinea 1 grijs 18px*/
 h2 {
-    color: white; background-color: #4d4d4d; padding: 30px; border-style: solid; font-family: Open sans; font-size: 1.25vw; text-align: justify; color: wgite;
+    color: white; background-color: #4d4d4d; padding: 30px; border-style: solid; font-family: Arial; font-size: 1.25vw; text-align: justify; color: white;
 }
 
 /*dingen voor lange teksten.*/

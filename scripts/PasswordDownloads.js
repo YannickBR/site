@@ -4,7 +4,7 @@ var pass1 = prompt('Vul je wachtwoord in!','');
 while (testV < 3) {
 if (!pass1) 
 history.go(-1);
-if (pass1.toLowerCase() == "cdqopd") {
+if (pass1.toLowerCase() == "erwten") {
 alert('Wachtwoord correct! Druk op OK om door te gaan!');
 location.replace('downoadswwtrue.html');
 break;
