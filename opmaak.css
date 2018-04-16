@@ -2,16 +2,16 @@ ul {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
-    color: #006666;
-    margin: -6px;
-    margin-left: -15px;
-    background-color: white;
-    opacity:  30%;
-    font-family: monospace;
+    color: grey;
+    margin:;
+    background-color: rgba(255,255,255,100%);
+    font-family: "Carlito";
     font-size: 1.25vw;
     transition: 0.4s;
-    letter-spacing: .5px;
+    letter-spacing: .5px
+    border-style: solid;
 }
+
 li {
     float: left;
     transition: 0.4s;
@@ -19,40 +19,30 @@ li {
 
 .link {
   color: white;
-
-}
-
-.logo {
-  }
-.sticky {
-    position: fixed;
-  top: 0;
-  width: 100%
 }
 li a, .dropbtn {
     display: inline-block;
     color: grey;
     text-align: center;
-    padding: 25px;
+    padding: 14px 18px;
     text-decoration: none;
     transition: 0.4s;
         opacity: 70%;
 }
-html {
+body, html {
     height: 100%;
-    background-image: url(https://www.planwallpaper.com/static/images/4433836-space-wallpapers.jpg);
+background-image: url(https://drhappy.de/sites/all/themes/drhappy/landingpage/assets/img/slider/slider-1.jpg);    background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
 }
 
 .bg { 
-      position: fixed;
-  top: 0;
+  position: fixed;
+    top: 0;
   width: 100%
-
 }
 li a:hover, .dropdown:hover .dropbtn {
-    color: #333333;
+    color: #4d4d4d;
     transition: 0.4s;
 }
 
@@ -68,13 +58,14 @@ li a:hover, .dropdown:hover .dropbtn {
     color: grey;
 }
 .bg2 {
-  background-color: #333 40%;
+  background-color: #333;
   padding: 20px;
   margin: -.5vw;
+  border-top: solid white;
 }
 /*actieve pagina een andere kleur geven*/
 .active {
-    color: #333333;
+  color: #808080; 
 }
 .textbackground {
   position: absolute;
@@ -83,11 +74,10 @@ li a:hover, .dropdown:hover .dropbtn {
   width: 100%;
   text-align: center;
   font-size: 30px; 
-  font-family: monospace  ;
-  color: #fff;
-
+  font-family: Carlito;
+  color: black;
 }
-/*drop text*/
+/*Dropdown content text*/
 .dropdown-content a {
     color: grey;
     padding: 12px 14px;
@@ -96,9 +86,6 @@ li a:hover, .dropdown:hover .dropbtn {
     text-align: left;
     font-family: monospace;
     transition: 0.4s;
-    border-right: solid;
-    border-left: solid; 
-
 
 }
 img {
@@ -113,11 +100,11 @@ img {
 
 /*Begin op pagina*/
 h1 {
-  color: rgb(153, 153, 200); background-color: rgba(153, 153, 153, 80%); padding: 50px; border-style: solid; font-family: Arial; font-size: 1.5vw; text-align: justify; color: white ; 
+  color: white; background-color: #4d4d4d; padding: 50px; border-style: solid; border-radius: 20px; font-family: Carlito; font-size: 1.5vw; text-align: justify; color: 
 }
 /*Alinea 1 grijs 18px*/
 h2 {
-    color: white; background-color: #4d4d4d; padding: 30px; border-style: solid; font-family: Arial; font-size: 1.25vw; text-align: justify; color: white;
+    color: white; background-color: #4d4d4d; padding: 30px; border-style: solid; border-radius: 20px; font-family: Carlito; font-size: 1.25vw; text-align: justify; color: wgite;
 }
 
 /*dingen voor lange teksten.*/
