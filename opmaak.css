@@ -29,7 +29,7 @@ li a, .dropbtn {
     transition: 0.4s;
         opacity: 70%;
 }
-body, html {
+html {
     height: 100%;
 background-image: url(https://drhappy.de/sites/all/themes/drhappy/landingpage/assets/img/slider/slider-1.jpg);    background-position: center;
     background-repeat: repeat-y;
@@ -89,6 +89,11 @@ li a:hover, .dropdown:hover .dropbtn {
 
 }
 img {
+ display:   block;
+ margin-top: 10px;
+ border-style: solid;
+ border-radius: 5px;
+ color: white;
 }
 
 /*Opmaak van het Menu als je eroverheen gaat en van de dropdown van CKV*/
